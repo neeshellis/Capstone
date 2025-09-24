@@ -1,9 +1,13 @@
-# Project3
+# Capstone - Visitor Accommodaton Application
 This project is for a backend application to represent the CRUD functionality of a database, using created data from a JSON file.
+
+The BackEnd Application was developed on a seperate branch named BackEnd in GitHub.
 
 The project is running on the main branch in GitHub.
 
-The database I am using is SQL and the GUI is MySQL WorkBench. Initially I created a new Reviews database in my Mac terminal having initially connected to my SQL server.
+I have created a data.JSON file for my data CRUD example set.
+
+<!-- The database I am using is SQL and the GUI is MySQL WorkBench. Initially I created a new Reviews database in my Mac terminal having initially connected to my SQL server. -->
 
 I then created a full MVC backend application in Visual Code and connected my new database using the file dbConnect.js.  I could check if this was successful by opening up MySQL WorkBench.
 
