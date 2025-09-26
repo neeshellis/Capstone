@@ -23,6 +23,6 @@ router.delete('/:id', (req, res) => {
 Controllers.accommodationController.deleteAccommodation(req, res)
 })
 
-// Controllers.initialController.storeAccommodation()
+Controllers.initialController.storeAccommodation()
 
 module.exports = router;

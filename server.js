@@ -13,11 +13,12 @@ res.json({ message: "Welcome to my SQL DB application." });
 let userRoutes = require('./routes/userRoutes');
 app.use('/api/user', userRoutes);
 
+let accommodationRoutes = require('./routes/accommodationRoutes');
+app.use('/api/accommodation', accommodationRoutes);
+
 let bookingRoutes = require('./routes/bookingRoutes');
 app.use('/api/booking', bookingRoutes);
 
-let accommodationRoutes = require('./routes/accommodationRoutes');
-app.use('/api/accommodation', accommodationRoutes);
 
 // let reviewRoutes = require('./routes/reviewRoutes');
 // app.use('/api/review', reviewRoutes);

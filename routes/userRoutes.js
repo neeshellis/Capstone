@@ -23,6 +23,6 @@ router.delete('/:id', (req, res) => {
 Controllers.userController.deleteUser(req, res)
 })
 
-// Controllers.initialController.storeUser()
+Controllers.initialController.storeUser()
 
 module.exports = router;

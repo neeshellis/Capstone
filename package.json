@@ -1,7 +1,7 @@
 {
-  "name": "myreviewdb.app",
+  "name":"mycapstone.app",
   "version": "1.0.0",
-  "description": "Project 3 backend application",
+  "description": "Capstone Project",
   "license": "ISC",
   "author": "Neesh Ellis",
   "type": "commonjs",

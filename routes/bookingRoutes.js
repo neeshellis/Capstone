@@ -23,5 +23,5 @@ router.delete('/:id', (req, res) => {
 Controllers.bookingController.deleteBooking(req, res)
 })
 
-// Controllers.initialController.storeBooking()
+Controllers.initialController.storeBooking()
 module.exports = router;
