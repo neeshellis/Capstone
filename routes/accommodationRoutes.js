@@ -6,23 +6,23 @@ const Controllers = require("../controllers");
 // (the prefix from server.js)
 
 router.get('/', (req, res) => {
-Controllers.reviewController.getReviews(res);
+Controllers.accommodationController.getAccommodation(res);
 })
 
 // matches POST requests sent to /api/reviews/create
 router.post('/create', (req, res) => {
-Controllers.reviewController.createReview(req.body,
+Controllers.accommodationController.createAccommodation(req.body,
 res)
 })
 
 router.put('/:id', (req, res) => {
-Controllers.reviewController.updateReview(req, res)
+Controllers.accommodationController.updateAccommodation(req, res)
 })
 
 router.delete('/:id', (req, res) => {
-Controllers.reviewController.deleteReview(req, res)
+Controllers.accommodationController.deleteAccommodation(req, res)
 })
 
-Controllers.initialController.storeReview()
+// Controllers.initialController.storeAccommodation()
 
 module.exports = router;

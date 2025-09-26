@@ -11,13 +11,23 @@ res.json({ message: "Welcome to my SQL DB application." });
 });
 
 let userRoutes = require('./routes/userRoutes');
-app.use('/api/users', userRoutes);
+app.use('/api/user', userRoutes);
 
 let bookingRoutes = require('./routes/bookingRoutes');
-app.use('/api/bookings', bookingRoutes);
+app.use('/api/booking', bookingRoutes);
 
-let reviewRoutes = require('./routes/reviewRoutes');
-app.use('/api/reviews', reviewRoutes);
+let accommodationRoutes = require('./routes/accommodationRoutes');
+app.use('/api/accommodation', accommodationRoutes);
+
+// let reviewRoutes = require('./routes/reviewRoutes');
+// app.use('/api/review', reviewRoutes);
+
+// let contactRoutes = require('./routes/contactRoutes');
+// app.use('/api/contact', contactRoutes);
+
+// let activitiesRoutes = require('./routes/activitiesRoutes');
+// app.use('/api/activities', activitiesRoutes);
+
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8081;

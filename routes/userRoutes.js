@@ -2,10 +2,11 @@ const express = require("express");
 const router = express.Router();
 const Controllers = require("../controllers");
 
+
 // matches GET requests sent to /api/users
 // (the prefix from server.js)
 router.get('/', (req, res) => {
-Controllers.userController.getUsers(res);
+Controllers.userController.getUser(res);
 })
 
 // matches POST requests sent to /api/users/create
@@ -22,6 +23,6 @@ router.delete('/:id', (req, res) => {
 Controllers.userController.deleteUser(req, res)
 })
 
-Controllers.initialController.storeUsers()
+// Controllers.initialController.storeUser()
 
 module.exports = router;

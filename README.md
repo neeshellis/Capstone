@@ -2,10 +2,15 @@
 This project is for a backend application to represent the CRUD functionality of a database, using created data from a JSON file.
 
 The BackEnd Application was developed on a seperate branch named BackEnd in GitHub.
+The FrontEnd Application was developed on a seperate branch named FrontEnd in GitHub
 
-The project is running on the main branch in GitHub.
+I created an SQL database to hold my data for the application called myCapstone.  To demonstrate the application I created a JSON file to carry out CRUD examples with the data as appose to an external API data source
 
-I have created a data.JSON file for my data CRUD example set.
+I used MySQL WorkBench to show the creation of the models
+
+<!-- The project is running on the main branch in GitHub. -->
+
+
 
 <!-- The database I am using is SQL and the GUI is MySQL WorkBench. Initially I created a new Reviews database in my Mac terminal having initially connected to my SQL server. -->
 

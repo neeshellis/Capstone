@@ -9,10 +9,16 @@ id: {
 type: DataTypes.INTEGER, allowNull: false, autoIncrement:
 true, primaryKey: true
 },
-firstName: {
+username: {
 type: DataTypes.STRING, allowNull: false
 },
-lastName: {
+password: {
+type: DataTypes.STRING, allowNull: false
+},
+firstname: {
+type: DataTypes.STRING, allowNull: false
+},
+lastname: {
 type: DataTypes.STRING, allowNull: false
 },
 email: {
@@ -21,12 +27,10 @@ type: DataTypes.STRING, allowNull: false, unique: true
 mobile: {
 type: DataTypes.STRING, allowNull: false
 },
-address: {
-type: DataTypes.STRING, allowNull: false
-}
-}, {
+}, 
+{
 sequelize: sequelizeInstance, 
-modelName: 'users', //name the model (table)lowercase and plural is using Mongo
+modelName: 'user', //name the model (table)lowercase and plural is using Mongo
 timestamps: true, 
 freezeTableName: true
 }

@@ -6,7 +6,7 @@ const Controllers = require("../controllers");
 // (the prefix from server.js)
 
 router.get('/', (req, res) => {
-Controllers.bookingController.getBookings(res);
+Controllers.bookingController.getBooking(res);
 })
 
 // matches POST requests sent to /api/bookings/create
@@ -23,5 +23,5 @@ router.delete('/:id', (req, res) => {
 Controllers.bookingController.deleteBooking(req, res)
 })
 
-Controllers.initialController.storeBooking()
+// Controllers.initialController.storeBooking()
 module.exports = router;
