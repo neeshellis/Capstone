@@ -19,15 +19,14 @@ app.use('/api/accommodation', accommodationRoutes);
 let bookingRoutes = require('./routes/bookingRoutes');
 app.use('/api/booking', bookingRoutes);
 
+let reviewRoutes = require('./routes/reviewRoutes');
+app.use('/api/review', reviewRoutes);
 
-// let reviewRoutes = require('./routes/reviewRoutes');
-// app.use('/api/review', reviewRoutes);
+let activitiesRoutes = require('./routes/activitiesRoutes');
+app.use('/api/activities', activitiesRoutes);
 
-// let contactRoutes = require('./routes/contactRoutes');
-// app.use('/api/contact', contactRoutes);
-
-// let activitiesRoutes = require('./routes/activitiesRoutes');
-// app.use('/api/activities', activitiesRoutes);
+let contactRoutes = require('./routes/contactRoutes');
+app.use('/api/contact', contactRoutes);
 
 
 // set port, listen for requests

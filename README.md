@@ -1,20 +1,33 @@
 # Capstone - Visitor Accommodaton Application
-This project is for a backend application to represent the CRUD functionality of a database, using created data from a JSON file.
+Capstone BackEnd development.
 
-The BackEnd Application was developed on a seperate branch named BackEnd in GitHub.
-The FrontEnd Application was developed on a seperate branch named FrontEnd in GitHub
+GIT
+I created a new Repository in GitHub called Capstone.  I then created two seperate branches named FrontEnd and BackEnd.  I used the BackEnd branch to then develop this Backend application for myCapstone Project.
 
-I created an SQL database to hold my data for the application called myCapstone.  To demonstrate the application I created a JSON file to carry out CRUD examples with the data as appose to an external API data source
+I created a full MVC BackEnd application in Visual Code. I had the following dependancies - axios, dotenv, express, mysql2, sequelize in my package.json file.  I created a file dbConnect.js. in my application so I could connect to a database.  
 
-I used MySQL WorkBench to show the creation of the models
+I then created a new Capstone SQL database in my Mac Terminal. Returning to Visual Code I activated the SQL server which I had previously connected to MySQL WorkBench GUI, there I could see my new database called myCapstone in the MySQL Workbench window.
+
+I used WorkBench as my GUI to show the database stucture with 6 models - User, Accommodation, Booking, Review, Activies and Contact which I had created first in Visual Code.  Initally to test the application I used ThunderClient to carry out the CRUD functions for each model.  Once working correctly, I created a JSON dataset using a LLM, and an InitialController in the controllers folder to link the JSON data through to my database. 
+
+To run this data and populate the myCapstone database, I had to ensure the Sql server was running in the VC terminal using the command json-server data.json, then started up the node package manager with the command run npm start.
+
+Throughout this process I committed regularly to GitHub referencing the stages each time.
+
+<!-- Next step was to use the physical structure of my Capstone application to create 6 x models, 6 x controllers and 6 x routes (all in their respective folders) and an Initial Controller to manage the data sets to be captured eventually through my FrontEnd. -->
+
+
+
+<!-- My goal is to create three further models, namely Review, Activities and Contact if time allows -->
+
+
 
 <!-- The project is running on the main branch in GitHub. -->
 
 
-
 <!-- The database I am using is SQL and the GUI is MySQL WorkBench. Initially I created a new Reviews database in my Mac terminal having initially connected to my SQL server. -->
 
-I then created a full MVC backend application in Visual Code and connected my new database using the file dbConnect.js.  I could check if this was successful by opening up MySQL WorkBench.
+
 
 In Visual Code I then created each table in individual files under the models folder.  I repeated this with a componant for each table, and a routes files for each model with the CRUD commands. The server.js file when activated links the newly created Database to the Routes for each Model.
 

@@ -1,6 +1,9 @@
 module.exports = {
 userController: require('./userController'),
-bookingController: require('./bookingController'),
 accommodationController: require('./accommodationController'),
+bookingController: require('./bookingController'),
+reviewController: require('./reviewController'),
+activitiesController: require('./activitiesController'),
+contactController: require('./contactController'),
 initialController: require('./initialController')
 }
