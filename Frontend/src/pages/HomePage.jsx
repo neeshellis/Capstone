@@ -11,7 +11,7 @@ export default function HomePage() {
     <div>
        <div>
        <Typography variant="h4" component="h4" sx={{ padding: 10, color: '#333815', textShadow: '2px 3px 5px rgb(248, 243, 243)'}}>
-      Experience Wānaka! 
+      Magical Wānaka! 
     
       </Typography>
       </div>
