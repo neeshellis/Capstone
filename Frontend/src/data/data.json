@@ -1,26 +1,32 @@
 {
-  "pricingItems": [
+  "accommodation": [
     {
-      "title": "The Valley Inn, Cardrona - max 4 guests",
-      "image": "/assets/valleyinn.jpg",
-      "description": "Price per night for 2 guests",
-      "price": "$180"
+      "title": "The Valley Inn, Cardrona ",
+      "image": "/assets/images/valleyinn/valleyinnview.jpeg",
+      "description": "'Sun, Snow & Seclusion in the Cardrona Valley'",
+      "capacity": "Price per night for 2 guests, sleeps up to 4",
+      "price": "$230"
     },
 
     {
-      "title": "The Mancave, AlbertTown - max 2 guests",
-      "image": "/assets/mancave.jpeg",
-      "description": "Price per night for 2 guests",
-      "price": "$150"
+      "title": "The Cottage, Albert Town",
+      "image": "/assets/images/cottage/cottage-main.jpeg",
+      "description": "'Cosy luxurious cottage a stone's through from the mighty Clutha River!'",
+      "capacity": "Price per night for 2 guests, sleeps up to 2",
+      "price": "$160 "
     },
 
     {
-      "title": "The BunkHouse, AlberTown - max 5 guests",
-      "image": "/assets/bunkhouse.jpeg",
-      "description": "Price per night for 2 guests",
-      "price": "$200"
-    },
+      "title": "The BunkHouse, Albert Town",
+      "image": "/assets/images/bunkhouse/bunkhouse-living1.jpeg",
+      "description": "'Bikers Delight! 44m2 self contained cottage, perfect for family and friends'",
+      "capacity": "Price per night for 2 guests, sleeps up to 5",
+      "price": "$220"
+    }
+  ],
 
+
+ "Activities": [
     {
       "title": "Additional Guest",
       "image": "/assets/additionalguest.jpg",

@@ -8,7 +8,7 @@ import { useData } from '../hooks/useData';
 import AccommodationCard from '../components/AccommodationCard';
 
 export default function AccommodationPage() { 
-    const data = useData("http://localhost:3000/pricingItems")
+    const data = useData("http://localhost:3000/accommodation")
 
     const storedItems = data?.map(rate => (
     <Grid item xs={12} sm={6} md={4} key={rate.id} sx={{ display: 'flex' }}>
@@ -16,6 +16,7 @@ export default function AccommodationPage() {
             title={rate.title}
             description={rate.description} 
             image={rate.image} 
+            capacity={rate.capacity}
             price={rate.price}
         />
     </Grid>
@@ -24,7 +25,7 @@ export default function AccommodationPage() {
     return (
         <div>
             <Container sx={{ 
-                padding: 5, 
+                padding: 2, 
                 marginTop: 10, 
                 backgroundColor: 'rgba(225, 227, 211, 0.5)', 
                 fontWeight: 600, 

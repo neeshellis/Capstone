@@ -70,10 +70,10 @@ export default function NavBar() {
             </MenuItem>
             <MenuItem 
               component={NavLink} 
-              to="/adventures" 
+              to="/activities" 
               onClick={handleMenuClose}
             >
-              Adventures
+              Book to Stay
             </MenuItem>
             <MenuItem 
               component={NavLink} 
@@ -82,6 +82,14 @@ export default function NavBar() {
             >
               Reviews
             </MenuItem>
+            <MenuItem 
+              component={NavLink} 
+              to="/activities" 
+              onClick={handleMenuClose}
+            >
+              Adventures
+            </MenuItem>
+            
             <MenuItem 
               component={NavLink} 
               to="/contact" 
@@ -118,18 +126,19 @@ export default function NavBar() {
             Accommodation
           </Button>
 
-          <Button 
+         <Button 
             color="inherit" 
             component={NavLink} 
-            to="/adventures"
+            to="/accommodation"
             sx={{ 
               textTransform: 'none',
               display: { xs: 'none', md: 'block' }
             }}
           >
-            Adventures
+            Book to Stay
           </Button>
-          
+
+   
           <Button 
             color="inherit" 
             component={NavLink} 
@@ -141,6 +150,19 @@ export default function NavBar() {
           >
             Reviews
           </Button>
+
+          <Button 
+            color="inherit" 
+            component={NavLink} 
+            to="/activities"
+            sx={{ 
+              textTransform: 'none',
+              display: { xs: 'none', md: 'block' }
+            }}
+          >
+            Activities
+          </Button>
+       
 
           <Button 
             color="inherit" 
@@ -158,11 +180,6 @@ export default function NavBar() {
                 <AccountCircle />
               </IconButton>
           </div>
-
-
-
-
-
 
         </Toolbar>
       </AppBar>
