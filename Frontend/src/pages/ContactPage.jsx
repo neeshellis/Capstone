@@ -72,9 +72,6 @@
 
 
 
-
-
-
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -87,12 +84,11 @@ import ContactForm from '../components/ContactForm';
 export default function ContactPage() { 
   return (
     <div>
-     
-      <Container sx={{ padding: 5, marginTop: 10, backgroundColor: 'rgba(225, 227, 211, 0.9)', fontWeight: 600, 
-        minHeight: '5vh', maxWidth: '70%', borderRadius: 4 
+      <Container sx={{ padding: 5, marginTop: 10, backgroundColor: 'rgba(242, 243, 232, 0.9)', fontWeight: 600, 
+        minHeight: '5vh', maxWidth: '70%', borderRadius: 2
      }}> 
       <Typography variant="p" component="p" sx={{ color:'#333815'}}>
-      Please send all inquiries using the form below:
+      Please complete the form below for all inquiries:
       </Typography>
       <br></br>
       <ContactForm/>

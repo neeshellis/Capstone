@@ -1,7 +1,7 @@
 import React from "react";
 
 export const themes = {
-  light: { foreground: "#8b4513", background: "#fff8dc" }, // Brown text, beige bg
+  light: { foreground: "#131211ff", background: "#ccbe86ff" }, // Brown text, beige bg
   dark:  { foreground: "#ffd700", background: "#2f1b14" }, // Gold text, dark brown bg
 };
 

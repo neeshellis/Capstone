@@ -7,9 +7,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 
-// In your AccommodationCard.jsx
-export default function ActivitiesCard({title, description, image,}) {
-    console.log(image)
+
+export default function ActivitiesCard({title, image, description}) {
   return (
     <Card sx={{ 
       maxWidth: '100%', 
@@ -26,28 +25,20 @@ export default function ActivitiesCard({title, description, image,}) {
         <Typography gutterBottom variant="p" component="div">
          {title} 
         </Typography>
-        <Typography variant="body2" sx={{ flexGrow: 1 }}>
-          {description}
-        </Typography>
-        <br/>
         <CardMedia
           component="img"
           alt={title}
           height="140"
           image={image}
         />
-        <br/>
-         <Typography variant="body2" sx={{ fontSize: '.8rem', flexGrow: 1 }}>
-          {capacity}
-        </Typography>
-        <br/>
-        <Typography variant="h6" sx={{ color: '#333815', fontWeight: 600 }}>
-          {price}
+         <br/>
+        <Typography variant="body2" sx={{ flexGrow: 1 }}>
+          {description}
         </Typography>
       </CardContent>
       <CardActions sx={{ justifyContent: 'center' }}>
         <Button size="meduim" sx={{ backgroundColor: 'skyblue', color: 'white', '&:hover': { backgroundColor: 'darkred' } }}
-        >Book</Button> 
+        >Enquire</Button> 
       </CardActions>
     </Card>
   );
