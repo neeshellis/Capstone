@@ -86,7 +86,6 @@ export default function BookingForm() {
           '&:hover': {
             backgroundColor: '#4a5020',
           },
-          mt: 2
         }}
       >
         Send Message

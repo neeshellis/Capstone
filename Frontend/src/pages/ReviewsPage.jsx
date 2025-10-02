@@ -26,6 +26,10 @@ const storedItems = data?.map(rate => (
       <Container sx={{ padding: 5, marginTop: 10, backgroundColor: 'rgba(225, 227, 211, 0.9)', fontWeight: 600, 
         minHeight: '5vh', maxWidth: '70%', borderRadius: 2
      }}> 
+      <Typography variant="p" component="p" sx={{ color:'#333815'}}>
+       Hear what our guests have to say ..
+      </Typography>
+      <br/>
       <Grid container spacing={2} justifyContent={"center"}>
        {storedItems}
      </Grid>

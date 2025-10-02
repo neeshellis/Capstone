@@ -1,24 +1,25 @@
 import * as React from 'react';
-import { DemoContainer } from '@mui/x-date-pickers/internals/demo';
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import dayjs from 'dayjs';
+import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { MultiInputDateRangeField } from '@mui/x-date-pickers-pro/MultiInputDateRangeField';
-import { SingleInputDateRangeField } from '@mui/x-date-pickers-pro/SingleInputDateRangeField';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DateRangeCalendar } from '@mui/x-date-pickers-pro/DateRangeCalendar';
 
-export default function BasicDateRangeField() {
+export default function DateRangeCalendarValue() {
+  const [value, setValue] = React.useState([
+    dayjs('2022-04-17'),
+    dayjs('2022-04-21'),
+  ]);
+
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DemoContainer
-        components={['SingleInputDateRangeField', 'MultiInputDateRangeField']}
-      >
-        <SingleInputDateRangeField label="Departure - Return" />
-        <MultiInputDateRangeField
-          slotProps={{
-            textField: ({ position }) => ({
-              label: position === 'start' ? 'Departure' : 'Return',
-            }),
-          }}
-        />
+      <DemoContainer components={['DateRangeCalendar', 'DateRangeCalendar']}>
+        <DemoItem label="Booking Dates">
+          <DateRangeCalendar
+            value={value}
+            onChange={(newValue) => setValue(newValue)}
+          />
+        </DemoItem>
       </DemoContainer>
     </LocalizationProvider>
   );

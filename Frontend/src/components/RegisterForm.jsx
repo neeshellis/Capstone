@@ -20,7 +20,7 @@ function RegisterForm() {
     if (userPassword.length < 5) setSubmitResult('Password must be at least 5 characters long');
     else if (userPassword === userName) setSubmitResult('Password must not match username');
     else {
-      setSubmitResult('Successful login.');
+      setSubmitResult('Thank you for registering with Wānaka Magic!');
       handleUpdateUser({ username: userName });
     }
   };
@@ -81,7 +81,7 @@ return (
                             onChange={(e) => setUserEmail(e.target.value)} required fullWidth/>
         </div>
         <br/>
-        <button type="submit">Submit</button>
+        <button type="submit">Register</button>
         <p aria-live="polite">{submitResult}</p>
       </form>
       {/* <div style={{ marginTop: 12 }}><ThemeToggleButton /></div> */}

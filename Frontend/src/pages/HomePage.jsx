@@ -24,57 +24,47 @@ export default function HomePage() {
       </Typography>
       </div>
       <Container sx={{ 
-        fontStyle: 'italic', 
-        padding: 1, 
+     fontStyle: 'italic', 
+      padding: 1, 
         marginTop: .5, 
-        backgroundColor: 'rgba(225, 227, 211, 0.5)', 
+        backgroundColor: 'rgba(247, 247, 244, 0.7)', 
         minHeight: '5vh',
-        maxWidth: '80%', 
+      maxWidth: '80%', 
         borderRadius: 4 
        }}> 
       <Typography 
-        variant="body2" 
+      variant="body2" 
         component="p" 
         sx={{ 
         color: 'olivegree',
-        fontSize: '.9rem',
+         fontSize: '.9rem',
         fontFamily: 'inherit' 
        }}>
         Regenerative tourism is alive and flourishing here in Wānaka, New Zealand. We welcome you to explore with the locals the magic behind this beautiful corner of the world.
        </Typography>
       </Container>    
-      <Container 
-      sx={{ fontStyle: 'italic', 
-        padding: .5, 
-        marginTop: 30, 
-        backgroundColor: 'rgba(225, 227, 211, 0.5)', 
-        minHeight: '5vh', 
-        maxWidth: '90%', 
-        borderRadius: 4 
-     }}> 
     <Box
     component="video"
      sx={{
-    width: '100%',
+    width: 'calc(100% - 20px)', 
     height: 'auto', 
-    padding: 'auto',
     display: 'block',
-    borderRadius: 4,
-    alignContent: 'center'
-    }}
+    margin: '35vh auto 60px auto', // Centers horizontally and adds bottom margin
+    border: '6px solid rgba(247, 247, 244, 0.7)',
+    borderRadius: 2, // Optional: adds rounded corners
+    boxSizing: 'border-box' // Includes border in width calculation
+  }}
     autoPlay
     muted
     playsInline
     loop
     >
-    <source src="/assets/video/wanaka-slides.mp4" type="video/mp4" />
+    <source src="/assets/video/wanaka-slides.mp4" type="video/mp4"  />
     Your browser does not support the video tag.
     </Box>
-     </Container>
+    </div>
 
-     </div>
-
-  )
+  );
 }
 
 
